@@ -3,6 +3,7 @@ html, body {
   padding: 0 0 0 0;
   margin: 0;
   font-family: 'times new roman', 'arial';
+  float: center;
 }
 
 h1,h2,h3,h4 {
