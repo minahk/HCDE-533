@@ -2,12 +2,12 @@
 html, body {
   padding: 0 0 0 0;
   margin: 0;
-  font-family: 'times new roman', 'arial';
+  font-family: 'helvetica', 'arial';
   float: center;
 }
 
 h1,h2,h3,h4 {
-  font-family: 'times new roman', 'arial';
+  font-family: 'helvetica', 'arial';
   }
 
 
@@ -18,8 +18,11 @@ a {
 .header {
   background: #fff;
   color: #000;
-  height: 500px;
-  padding: 20px 0px 0px;
+  height: 200px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
 }
 
 .header h1 {
@@ -29,8 +32,8 @@ a {
 .assignment {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'times new roman', 'arial';
-  padding: 20px 20px 20px 30px;
+  font-family: 'helvetica', 'arial';
+  padding: 20px 20px 20px 40px;
   width: 250px;
   height: 350px;
   float: left;
