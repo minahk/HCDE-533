@@ -38,16 +38,89 @@
             <img src="assignment-2/a2-4.jpg" width=1000></a>
             </p>
             <p>
-            To center the cuts I wanted to make on each edge of the shape, I used "Curve Middle" to find the midpoint of each edge segment and set the appropriate angle of the cut using "Vector 2Pt" (the direction that results from connecting the centerpoint of the polygon with the midpoint of the polygon's edge). The "Scale" component then sets the width of the cut at each edge. The scale factor is the desired width of the cut divided by the length of the polygon edge. 
+            To center the cuts I wanted to make on each edge of the shape, I used "Curve Middle" to find the midpoint of each edge segment. The "Scale" component then sets the width of the cut at each edge. The scale factor is the desired width of the cut (an adjustable input) divided by the length of the polygon edge.
+            </p>
             
+
+            <p>
+            <img src="assignment-2/a2-14.png" width=1000></a>
+            </p>
+            <p>
+            I set the appropriate angle of the cut using "Vector 2Pt" (the direction that results from connecting the centerpoint of the polygon with the midpoint of the polygon's edge). I set the "Boolean Toggle" to True and unitized the geometry so that the depth of the cut was 1. I then used the "Amplitude" component to adjust the length of the direction.
+            In order to trim out the cut, I set the value of the amplitude to 1 unit more (using the "Addition" component) than my desired depth for the cut.
+            </p>
+
+            <p>
+            <img src="assignment-2/a2-15.png" width=1000></a>
+            </p>
+            <p>
+            I use the "Extrude" component to extrude the cut toward the set length of the direction.
+            </p>
+            
+
+             <p>
+            <img src="assignment-2/a2-5.jpg" width=1000></a>
+            </p>
+            <p>
+            The "Move" component actually moves the cut 1 unit outside the bounds of the polygon to enable trimming.
+            </p>
+           
+
+            <p>
+            <img src="assignment-2/a2-6.jpg" width=1000></a>
+            </p>
+            <p>
+            I first trimmed the smaller polygon from the main polygon using "Trim with Regions."
+            </p>
+            
+
+            <p>
+            <img src="assignment-2/a2-7.jpg" width=1000></a>
+            </p>
+            <p>
+            I then trimmed the cuts from the geometry using a second round of "Trim with Regions."Join Curves" creates one unit out of the trimmed parts.
             </p>
             </p>
 
             <p>
-            <img src="assignment-2/a2-5.jpg" width=1000></a>
+            <img src="assignment-2/a2-8.jpg" width=1000></a>
             </p>
             <p>
+            In order to create 30 parts of the shape to fulfill the requirements of the assignment, I used "Rectangular Array" component. Since "cell" is the amount of distance your shape takes up, I created a large enough bounding box using the "Rectangle" component and passed the shape through it. 
             </p>
+          
+
+             <p>
+            <img src="assignment-2/a2-9.jpg" width=1000></a>
+            </p>
+            <p>
+            After the pieces were created, I “baked” them into Rhino.
+            </p>
+            
+
+            <p>
+            <img src="assignment-2/a2-10.jpg" width=1000></a>
+            </p>
+            <p>
+            I used the laser cutter at the 8 this time. Exported an AI file from Rhino and set the correct scale on export: 1.00mm = 0.0394in. I opend the file in Illustrator, adjusted the stroke weight to .01pt and set the canvas size to the size of my cardboard. I changed the stroke color to red, chose "natural" and "mat board" in material settings, set the thickness of the board, and pressed print.
+            </p>
+           
+
+            <p>
+            <img src="assignment-2/a2-11.jpg" width=1000></a>
+            </p>
+            <p>
+            The pieces fit!
+            </p>
+
+            <p>
+            <img src="assignment-2/a2-12.jpg" width=1000></a>
+            <img src="assignment-2/a2-13.jpg" width=1000></a>
+            </p>
+       
+            <h3>Source Notes:</h3>
+            
+         
 
         </div>
         
