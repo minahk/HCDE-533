@@ -18,7 +18,7 @@ html, body {
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+  padding-bottom: 1rem;    /* Footer height */
 }
 
 #footer {
@@ -26,7 +26,7 @@ html, body {
   bottom: 0;
   width: 100%;
   float: center;
-  height: 1.5rem;            /* Footer height */
+  height: 1rem;            /* Footer height */
 }
 
 .navigation {
