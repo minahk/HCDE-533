@@ -3,6 +3,7 @@ html, body {
   padding: 0 0 0 0;
   margin-left: 80px;
   margin-right: 80px;
+  margin-bottom: 120px;
   font-family: 'helvetica', 'arial';
   float: center;
 }
@@ -57,6 +58,7 @@ a {
     width: 1100px;
     float: left;
     padding: 300px 0px 30px 30px;
+    margin-bottom: 120px;
 }
 
 .widebody {
