@@ -1,9 +1,10 @@
 
 html, body {
   padding: 0 0 0 0;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-bottom: 120px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: 'helvetica', 'arial';
   float: center;
 }
