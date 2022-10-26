@@ -14,7 +14,11 @@ html, body {
 .navigation {
   background: #121212;
   color: #e0e0e0;
-  height: 40px;
+  height: 80px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 40px;
 }
 
 h1,h2,h3,h4 {
@@ -64,10 +68,13 @@ a {
 
 
 .footer {
+    background: #121212;
+    color: #e0e0e0;
     width: 1100px;
     float: left;
-    padding: 300px 0px 30px 30px;
-    margin-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
 }
 
 .widebody {
