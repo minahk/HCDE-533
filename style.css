@@ -23,6 +23,7 @@ html, body {
 
 h1,h2,h3,h4 {
   font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
   color: #e0e0e0;
   }
 
@@ -49,6 +50,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
   padding: 20px 20px 20px 40px;
   width: 250px;
   height: 350px;
