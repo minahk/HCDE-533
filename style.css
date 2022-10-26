@@ -71,7 +71,7 @@ a {
 }
 
 .footer {  
-  position: relative;  
+  position: static;  
   left: 20px;  
   bottom: 0px;  
   right: 20px;   
@@ -90,5 +90,9 @@ a {
   background: #0000F5;
   color: #e0e0e0;
   text-decoration: none;
+}
+
+.row {
+  float: center;
 }
 
