@@ -53,6 +53,7 @@ a {
   width: 250px;
   height: 350px;
   float: left;
+  color: #e0e0e0;
 }
 
 .assignment a {
@@ -66,16 +67,16 @@ a {
   text-decoration: none;
 }
 
-
-.footer {
-    background: #121212;
-    color: #e0e0e0;
-    width: 1100px;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 80px;
-}
+.footer {  
+  position: fixed;  
+  left: 20px;  
+  bottom: 80px;  
+  right: 20px;   
+  width: 100%;  
+  background-color: #121212;  
+  color: #e0e0e0;  
+  text-align: center;  
+  }    
 
 .widebody {
     width: 800px;
