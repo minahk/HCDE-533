@@ -1,7 +1,8 @@
 
 html, body {
   padding: 0 0 0 0;
-  margin: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
   font-family: 'helvetica', 'arial';
   float: center;
 }
