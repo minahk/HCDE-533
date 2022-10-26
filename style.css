@@ -5,13 +5,13 @@ html, body {
   margin-right: 60px;
   padding-left: 20px;
   padding-right: 20px;
-  font-family: "Noto Sans";
+  font-family: "Helvetica";
   float: center;
   background-color: black;
 }
 
 h1,h2,h3,h4 {
-  font-family: "Noto Sans";
+  font-family: 'Times New Roman', Times, serif;
   color: white;
   }
 
@@ -37,7 +37,7 @@ a {
 .assignment {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Noto Sans";
+  font-family: 'Times New Roman', Times, serif;
   padding: 20px 20px 20px 40px;
   width: 250px;
   height: 350px;
