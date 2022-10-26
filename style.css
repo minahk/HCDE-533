@@ -7,21 +7,22 @@ html, body {
   padding-right: 20px;
   font-family: "Noto Sans";
   float: center;
+  background-color: black;
 }
 
 h1,h2,h3,h4 {
   font-family: "Noto Sans";
-  color: #212121;
+  color: white;
   }
 
 
 a {
-  color: #212121;
+  color: white;
 }
 
 .header {
-  background: #fff;
-  color: #212121;
+  background: black;
+  color: white;
   height: 260px;
   padding-top: 20px;
   padding-right: 20px;
@@ -44,7 +45,7 @@ a {
 }
 
 .assignment a {
-    color: #212121;
+    color: white;
     text-decoration: none;
 }
 
