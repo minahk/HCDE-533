@@ -11,6 +11,7 @@ html, body {
   line-height: 1.4;
   float: center;
   background-color: #121212;
+  max-width: 1200px;
 }
 
 .flex-wrapper {
@@ -34,7 +35,6 @@ html, body {
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
-  padding-left: 40px;
 }
 
 h1,h2,h3,h4 {
@@ -68,7 +68,7 @@ a {
   color: #e0e0e0;
   margin-left: 80px;
   margin-right: 80px;
-  max-width: 1140px;
+  max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
 }
