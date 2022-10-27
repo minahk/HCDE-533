@@ -10,130 +10,134 @@
 
     </head> 
     <body> 
-        <div id="page-container">
-            <div id="content-wrap">
+        <div class="flex-wrapper">
 
-        <div class="navigation">
-            <a href="index.html"><h4>Go back to home</h4></a>
-        </div>
-        <div class="header">
-            <h1>Setting up my 3d printer</h1>
-            <p>
-            <img src="assignment-3/a3-assembly-01.jpg" width=1000></a>
-            </p>
-            <p>
-            I followed the steps in the instruction manual that came inside the box to assemble the printer. For steps where I needed a little more clarification and/or verification, I watched the <a href="https://youtu.be/ibsOYzXduYc">video of the unboxing and set up process</a>.
-            </p>
+            <div class="navigation">
+                <a href="index.html"><h4>Go back to home</h4></a>
+            </div>
 
-            <p>
-                <img src="assignment-3/a3-assembly-02.jpg" width=1000></a>
-                <p><h2>Assembly steps:</h2></p>
-                <p>1. I screwed in the vertical channels to the base.</p>
-                <p>2. I screwed in the power supply and set the voltage to 115V. I then screwed in the display control.</p>
-                <p>3. Next, I screwed in the z-axis switch. </p>
-                <p>4. I installed the z-moter next and secured the T-rod.</p>
-                <p>5. I installed the bowden tube feeder to the horizontal channel. </p>
-                <p>6. To the same channel, I attached the hotend and the bracket.  </p>
-                <p>7. To the same channel, I attached the hotend and the bracket. I adjusted the extruder's eccentric nuts to tighten its placement. </p>
-                <p>8. I added the adjuster to the end of that channel and then wrapped the belt around the whole bar, securing the ends in the thin slots at the bottom of the bar.</p>
-                <p>9. I then put the whole assembly onto the vertical rails, and then secured the last horizontal channel to the top of the rails. An end cap was attached to each side. </p>
-                <p>10. Attaching the spool holder is next. I got it as close to possible toward the left edge near the extruder. I had trouble screwing this down because the T nuts wouldn't turn inside the channel.</p>
-                <p>11. Lastly, I attached all the remaining cords, tube, cables, and limit switches. I then made sure all the screws holding this together were tight.</p>
-                <br>
-                <p>It took approximately 2 hours to complete the assembly.</p>
-            </p>
+            <div class="header">
+                <h1>Setting up my 3d printer</h1>
+                <p>
+                <img src="assignment-3/a3-assembly-01.jpg" width=1000></a>
+                </p>
+                <p>
+                I followed the steps in the instruction manual that came inside the box to assemble the printer. For steps where I needed a little more clarification and/or verification, I watched the <a href="https://youtu.be/ibsOYzXduYc">video of the unboxing and set up process</a>.
+                </p>
+            </div>
 
-            <p>
-                <h2>Adjusting the build plate level</h2>
-                <video width="1000" height="562.5" controls>
-                    <source src="assignment-3/a3-assembly-03.mp4" type="video/mp4">
-                </video>
-                <p>This was a nightmarish task that took what felt like an eternity to get right. I conducted the bed leveling protocol from Filament Friday.</p>
-                <p>I downloaded the files onto the SD card and activated the bedlevel.gcode to start leveling the bed. I did this for several rounds with a piece of paper, adjusting the wheels at the bottom of the plate to incrementally lower or increase the height of the bed.</p>
-                <p>It took me a while to figure out how all the wheels related to each other. Turning one seemed to also affect the other corners.</p>
-                <p>Ultimately, I had to readjust the height of the z-switch to a millimeter higher to increase the distance between the nozzle and the bed in the back corners.</p>
-                <p>After several tries, I successfully printed the bed leveling print.</p>
-                
-            </p>
+            <div class="content">
+                <p>
+                    <img src="assignment-3/a3-assembly-02.jpg" width=1000></a>
+                    <p><h2>Assembly steps:</h2></p>
+                    <p>1. I screwed in the vertical channels to the base.</p>
+                    <p>2. I screwed in the power supply and set the voltage to 115V. I then screwed in the display control.</p>
+                    <p>3. Next, I screwed in the z-axis switch. </p>
+                    <p>4. I installed the z-moter next and secured the T-rod.</p>
+                    <p>5. I installed the bowden tube feeder to the horizontal channel. </p>
+                    <p>6. To the same channel, I attached the hotend and the bracket.  </p>
+                    <p>7. To the same channel, I attached the hotend and the bracket. I adjusted the extruder's eccentric nuts to tighten its placement. </p>
+                    <p>8. I added the adjuster to the end of that channel and then wrapped the belt around the whole bar, securing the ends in the thin slots at the bottom of the bar.</p>
+                    <p>9. I then put the whole assembly onto the vertical rails, and then secured the last horizontal channel to the top of the rails. An end cap was attached to each side. </p>
+                    <p>10. Attaching the spool holder is next. I got it as close to possible toward the left edge near the extruder. I had trouble screwing this down because the T nuts wouldn't turn inside the channel.</p>
+                    <p>11. Lastly, I attached all the remaining cords, tube, cables, and limit switches. I then made sure all the screws holding this together were tight.</p>
+                    <br>
+                    <p>It took approximately 2 hours to complete the assembly.</p>
+                </p>
 
-            <p>
-                <h1>Test Prints: Cubes</h1>
-                <p> Once the bed leveling protocol was complete, I started the process of printing my first set of cubes.</p>
-                <br>
-                <h2>Steps:</h2>
-                <img src="assignment-3/a3-cube-04.png" width="1000"></a>
-                <p>1. In <b>Rhino</b>, I created a 2cm cube using the "Box" command. Then I exported it as an STL file.</p>
-                <img src="assignment-3/a3-cube-01.jpg" width="1000"></a>
-                <p>2. I opened the file in <b>Cura</b>, and printed 3 cubes each at 3 different quality settings: Low, Standard, and Super.</p>
-                <h3>Print times:</h3>
-                <p>Low quality: 20min</p>
-                <p>Standard quality: 26min</p>
-                <p>Super quality: 50min</p>
-                <img src="assignment-3/a3-cube-02.jpg" width="1000"></a>
-                <p>3. After each print, I used my calipers to measure the width and height of each cube.</p>
-                <img src="assignment-3/a3-cube-03.jpg" width="1000"></a>
-                <p>All prints came within a 1mm tolerance!</p>
-                <img src="assignment-3/a3-cube-05.jpg" width="1000"></a>
-                <p>I printed another cube with a <b>concentric top and bottom layer</b> at low quality setting. The outside to center printing creates a nice-looking pattern. The measurement for this cube is 19.37x20.20mm.</p>
-            </p>
+                <p>
+                    <h2>Adjusting the build plate level</h2>
+                    <video width="1000" height="562.5" controls>
+                        <source src="assignment-3/a3-assembly-03.mp4" type="video/mp4">
+                    </video>
+                    <p>This was a nightmarish task that took what felt like an eternity to get right. I conducted the bed leveling protocol from Filament Friday.</p>
+                    <p>I downloaded the files onto the SD card and activated the bedlevel.gcode to start leveling the bed. I did this for several rounds with a piece of paper, adjusting the wheels at the bottom of the plate to incrementally lower or increase the height of the bed.</p>
+                    <p>It took me a while to figure out how all the wheels related to each other. Turning one seemed to also affect the other corners.</p>
+                    <p>Ultimately, I had to readjust the height of the z-switch to a millimeter higher to increase the distance between the nozzle and the bed in the back corners.</p>
+                    <p>After several tries, I successfully printed the bed leveling print.</p>
+                    
+                </p>
+
+                <p>
+                    <h1>Test Prints: Cubes</h1>
+                    <p> Once the bed leveling protocol was complete, I started the process of printing my first set of cubes.</p>
+                    <br>
+                    <h2>Steps:</h2>
+                    <img src="assignment-3/a3-cube-04.png" width="1000"></a>
+                    <p>1. In <b>Rhino</b>, I created a 2cm cube using the "Box" command. Then I exported it as an STL file.</p>
+                    <img src="assignment-3/a3-cube-01.jpg" width="1000"></a>
+                    <p>2. I opened the file in <b>Cura</b>, and printed 3 cubes each at 3 different quality settings: Low, Standard, and Super.</p>
+                    <h3>Print times:</h3>
+                    <p>Low quality: 20min</p>
+                    <p>Standard quality: 26min</p>
+                    <p>Super quality: 50min</p>
+                    <img src="assignment-3/a3-cube-02.jpg" width="1000"></a>
+                    <p>3. After each print, I used my calipers to measure the width and height of each cube.</p>
+                    <img src="assignment-3/a3-cube-03.jpg" width="1000"></a>
+                    <p>All prints came within a 1mm tolerance!</p>
+                    <img src="assignment-3/a3-cube-05.jpg" width="1000"></a>
+                    <p>I printed another cube with a <b>concentric top and bottom layer</b> at low quality setting. The outside to center printing creates a nice-looking pattern. The measurement for this cube is 19.37x20.20mm.</p>
+                </p>
+            
+                <h3><FONT COLOR=red>*Disclaimer* I made a mistake and set the following prints to 3cm <b>radius</b> instead of 3cm <b>diameter</b>. The tubes and cylinders are about twice as big as they should be.</FONT></h3>
+
+                <p>
+                    <h1>Test Prints: Tubes</h1>
+                    <img src="assignment-3/a3-tube-01.jpg" width=1000></a>
+                    <p>I used the "Tube" command in Rhino to create two tubes that are 3cm in height and diameter (1.5cm radius). To create the tube with the single extrusion wall thickness, I set the thickness to .4mm (since the thickness of a wall line count of 2 in Cura is .8mm). 0.8mm was the thickness of the wall of the second tube.</p>
+                    <img src="assignment-3/a3-tube-02.jpg" width=1000></a>
+                    <p>I opened them in Cura and printed each one at a time since the cylinder with the double wall extrusion had an additional print setting: random z-alignment.</p>
+                    <img src="assignment-3/a3-tube-03.jpg" width="1000">
+                    <p>The double wall extrusion print unfortunately wasn't very consistent around its perimeter.</p>
+                    <p>The prints took about 32 min each.</p>
+                </p>
         
-            <h3><FONT COLOR=red>*Disclaimer* I made a mistake and set the following prints to 3cm <b>radius</b> instead of 3cm <b>diameter</b>. The tubes and cylinders are about twice as big as they should be.</FONT></h3>
-
-            <p>
-                <h1>Test Prints: Tubes</h1>
-                <img src="assignment-3/a3-tube-01.jpg" width=1000></a>
-                <p>I used the "Tube" command in Rhino to create two tubes that are 3cm in height and diameter (1.5cm radius). To create the tube with the single extrusion wall thickness, I set the thickness to .4mm (since the thickness of a wall line count of 2 in Cura is .8mm). 0.8mm was the thickness of the wall of the second tube.</p>
-                <img src="assignment-3/a3-tube-02.jpg" width=1000></a>
-                <p>I opened them in Cura and printed each one at a time since the cylinder with the double wall extrusion had an additional print setting: random z-alignment.</p>
-                <img src="assignment-3/a3-tube-03.jpg" width="1000">
-                <p>The double wall extrusion print unfortunately wasn't very consistent around its perimeter.</p>
-                <p>The prints took about 32 min each.</p>
-            </p>
-       
-            <p>
-                <h1>Test Prints: Cylinders</h1>
-                <img src="assignment-3/a3-cylinder-01.jpg" width=1000></a>
-                <p>I used the "cylinder" command in Rhino to create two cylinders with 3cm diameter. One I exported with a 0.1mm tolerance, and the other I exported as an stl file with a 0.001mm tolerance. </p>
-                <img src="assignment-3/a3-cylinder-02.jpg" width=1000></a>
-                <p>In an effort to save time, I printed them both together since they shared the same print settings in cura. The measurement wasn't perfectly consistent all around and the difference between the two wasn't too noticeable.</p>
-                <p>The prints took about 4 h 23 minutes. For the 0.001 tolerance, the measurement ranged from 60mm to 60.34mm. For the 0.1mm tolerance, the measurement ranged from 29.39mm to 30.58mm.</p>
-                <img src="assignment-3/a3-cylinder-03.jpg" width="1000">
-                <p>Changing the special mode setting to "spiralize outer contour" transformed a solid object to a single walled print with a solid bottom.</p>
-                <p>This print took about 34 min. It wasn't perfectly symmetrical. The measurement ranged from 58.48mm to 60.64mm.</p>
-                <img src="assignment-3/a3-cylinder-04.jpg" width="1000">
-                <p>For the cylinder to be printed on its side, I used the rotate tool in Cura to rotate it 90 degrees.</p>
-                <img src="assignment-3/a3-cylinder-05.jpg" width="1000">
-                <p>I then checked "Generate support" in the settings. The only override I made to the default support settings was changing the support placement from "everywhere" to "touching buildplate" for the sake of ease and simplicity.</p>
-                <img src="assignment-3/a3-cylinder-06.jpg" width="1000">
-                <p>It took me two tries. The first one failed in the middle because there was a kink in my PLA thread.</p>
-                <img src="assignment-3/a3-cylinder-07.jpg" width="1000">
-                <p>It worked! The measurement was approximately 60.39mm.</p>
-            </p>
+                <p>
+                    <h1>Test Prints: Cylinders</h1>
+                    <img src="assignment-3/a3-cylinder-01.jpg" width=1000></a>
+                    <p>I used the "cylinder" command in Rhino to create two cylinders with 3cm diameter. One I exported with a 0.1mm tolerance, and the other I exported as an stl file with a 0.001mm tolerance. </p>
+                    <img src="assignment-3/a3-cylinder-02.jpg" width=1000></a>
+                    <p>In an effort to save time, I printed them both together since they shared the same print settings in cura. The measurement wasn't perfectly consistent all around and the difference between the two wasn't too noticeable.</p>
+                    <p>The prints took about 4 h 23 minutes. For the 0.001 tolerance, the measurement ranged from 60mm to 60.34mm. For the 0.1mm tolerance, the measurement ranged from 29.39mm to 30.58mm.</p>
+                    <img src="assignment-3/a3-cylinder-03.jpg" width="1000">
+                    <p>Changing the special mode setting to "spiralize outer contour" transformed a solid object to a single walled print with a solid bottom.</p>
+                    <p>This print took about 34 min. It wasn't perfectly symmetrical. The measurement ranged from 58.48mm to 60.64mm.</p>
+                    <img src="assignment-3/a3-cylinder-04.jpg" width="1000">
+                    <p>For the cylinder to be printed on its side, I used the rotate tool in Cura to rotate it 90 degrees.</p>
+                    <img src="assignment-3/a3-cylinder-05.jpg" width="1000">
+                    <p>I then checked "Generate support" in the settings. The only override I made to the default support settings was changing the support placement from "everywhere" to "touching buildplate" for the sake of ease and simplicity.</p>
+                    <img src="assignment-3/a3-cylinder-06.jpg" width="1000">
+                    <p>It took me two tries. The first one failed in the middle because there was a kink in my PLA thread.</p>
+                    <img src="assignment-3/a3-cylinder-07.jpg" width="1000">
+                    <p>It worked! The measurement was approximately 60.39mm.</p>
+                </p>
 
 
-            <p>
-                <h1>Nested Object</h1>
-                <img src="assignment-3/a3-nested-01.jpg" width=1000></a>
-                <p>I used the "Polygon" command to create an octagon with a 3cm diameter. I created two more octagons, each was 1cm smaller in size than the other and placed them both inside the larger octagon. </p>
-                <p>I used "OffsetSrf" command to increase the thickness of the wall of each polygon. I then used "MergeAllCoplanarFaces" to simplify the shape.</p>
-                <img src="assignment-3/a3-nested-02.jpg" width=1000></a>
-                <p>It took about 32 minutes to print the object. I used "Brim" for the build plate adhesion to make it easier for me to take the shape off the plate.</p>
-                <img src="assignment-3/a3-nested-03.jpg" width=1000></a>
-                <p>Printed!</p>
-                <img src="assignment-3/a3-nested-4.jpg" width=1000>
-                <p>The lines of the border split in certain parts so it wasn't a perfect print.</p>
-            </p>
-    
-            <p>
-            Big thanks to our TA Junchao for his patience during Office Hours.
-            Huge thanks to my partner, Mike, for helping me troubleshoot the bed leveling protocol.
-            Shout out to Mike's friend, Thomas, who taught me "OffsetSrf" and "MergeAllCoplanarFaces" Rhino commands for my nested object.
-            </p>
-        </div>  
+                <p>
+                    <h1>Nested Object</h1>
+                    <img src="assignment-3/a3-nested-01.jpg" width=1000></a>
+                    <p>I used the "Polygon" command to create an octagon with a 3cm diameter. I created two more octagons, each was 1cm smaller in size than the other and placed them both inside the larger octagon. </p>
+                    <p>I used "OffsetSrf" command to increase the thickness of the wall of each polygon. I then used "MergeAllCoplanarFaces" to simplify the shape.</p>
+                    <img src="assignment-3/a3-nested-02.jpg" width=1000></a>
+                    <p>It took about 32 minutes to print the object. I used "Brim" for the build plate adhesion to make it easier for me to take the shape off the plate.</p>
+                    <img src="assignment-3/a3-nested-03.jpg" width=1000></a>
+                    <p>Printed!</p>
+                    <img src="assignment-3/a3-nested-4.jpg" width=1000>
+                    <p>The lines of the border split in certain parts so it wasn't a perfect print.</p>
+                </p>
+        
+                <p>
+                Big thanks to our TA Junchao for his patience during Office Hours.
+                Huge thanks to my partner, Mike, for helping me troubleshoot the bed leveling protocol.
+                Shout out to Mike's friend, Thomas, who taught me "OffsetSrf" and "MergeAllCoplanarFaces" Rhino commands for my nested object.
+                </p>
+            </div>  
 
+            <div class="footer">
+                <a href="index.html"><h4>Go back to home</h4></a>
+            </div>
+        
         </div>
-        <!--<footer id="footer"><a href="index.html"><h4>Go back to home</h4></a></footer>-->
-    </div>
 
        
         
