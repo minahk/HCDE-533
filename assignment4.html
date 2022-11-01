@@ -34,36 +34,36 @@
                     <p>Tools or software required: Rhino</p>
                 </p>
                 <br>
-                <p>1. Measure and note the dimension of your material (height, width, and thickness). The dimensions of my material was 101.92mm x 70.95mm x 1.4mm.</p>
+                <p>1. I measured and wrote down the dimension of your material (height, width, and thickness). The dimensions of my material was 101.92mm x 70.95mm x 1.4mm.</p>
                 
                 <p>
                     <img src="assignment-4/a4-design-01.jpg" width=1000>
-                    <p>2. Open <b>Rhino</b> and create a bounding box that matches the height and depth of your material. Title that layer “Material” and lock it once you are done.</p>                
+                    <p>2. I opened <b>Rhino</b> and created a bounding box that matched the height and depth of my material. I titled that layer “Material” and lock it once you are done.</p>                
                 </p>
 
                 <p>
-                    <p>3. In a separate layer titled “Cutting,” use the rectangle tool to create the first panel. I created a 20mm square.</p>
-                    <p>4. Use the rectangle tool again to create the “slots” in your box. Use the thickness of your material as the width of these slots so that the sides of your box fit together evenly without anything sticking out.</p>
+                    <p>3. In a separate layer titled “Cutting,” I used the "Rectangle" command to create the first panel. I created a 20mm square.</p>
+                    <p>4. I used the "Rectangle" command again to create the “slots” in your box. I used the thickness of my copper material as the width of these slots so that the sides of my box fit together evenly without anything sticking out.</p>
                 </p>
 
                 <p>
                     <img src="assignment-4/a4-design-02.jpg" width=1000>
-                    <p>5. Add the “dogbones” to clear space for the corners of those slots since the drill won’t be able to chip away at right angles. You don’t want the dogbones to be sized smaller than the head of the end mill.</p>
+                    <p>5. I added the “dogbones” to clear space for the corners of those slots since the drill wouldn't be able to chip away at at the right angles.</p>
                 </p>
                 
                 <p>
                     <img src="assignment-4/a4-design-03.jpg" width=1000>
-                    <p>6. To create the panel that will connect to this one, use the “Copy” command to duplicate this shape.</p>
+                    <p>6. To create the panel that will connect to this one, I used the “Copy” command to duplicate this curve.</p>
                 </p>
 
 
                 <p>
-                    <p>7. Transform the slots of that second object into slats that will fit into the slots of the first object by moving them to the outside of the shape. Make sure the y-axis of those shapes stay the same!</p>
+                    <p>7. I transformed the slots of that second curve into slats that will fit into the slots of the first curve by moving them to the outside of the curve – making sure the y-axis of those curves stayed the same.</p>
                     <img src="assignment-4/a4-design-04.jpg" width=1000>
-                    <p>8. To make sure the final cut parts actually fit together, you’ll need to reduce the height of the slat by 5-10%. I reduced the height of my slab by 7%. You can do this by selecting the two points of the shape, clicking the y-axis arrow (indicating the direction you want to move the selected points), and entering in the desired value. You might need to play with this value a bit to get the perfect fit so that the parts you create aren’t too loose or too tight. The height of my slot was 93% the height of the slot.</p>
+                    <p>8. To make sure the final cut parts actually fit together, I reduced the height of the slat by 7%. I did this by selecting the two points of the curve, clicking the y-axis arrow (indicating the direction I want to move the selected points), and entering in the desired value. I had to play with this value a bit to get the perfect fit so that the parts I created weren't too loose or too tight.</p>
 
-                    <p>Once you change the value, make sure you center-align this shape with the slat in the other rectangle. Do this for all the other slats in this object. Duplicate this shape and put it on the side so that you can easily readjust the height of these slats after your first test run.</p>
-                    <p>9. Move the dogbones so they clear the corners in the second shape.</p>
+                    <p>Once the heights of the slats were reduced, I made sure to center-align this shape with the slots in the other rectangle.</p>
+                    <p>9. I then moved the dogbones so they cleared the corners in the second curve.</p>
                 </p>
 
                 <p>
@@ -73,19 +73,13 @@
         
                 <p>
                     <img src="assignment-4/a4-design-07.jpg" width=1000>
-                    <p>11. Use the “Trim” command or “CurveBoolean” to trim away elements from both curves.</p>
+                    <p>11. I used the “Trim” command or “CurveBoolean” to trim away elements from both curves.</p>
                 </p>
 
                 <p>
                     <img src="assignment-4/a4-design-08.jpg" width=1000>
-                    <p>12. Use the "Copy" command to duplicate the shapes to create the other two pieces that I need.</p>
+                    <p>12. I used the "Copy" command to duplicate the curves to create the other two pieces that I needed to create a box.</p>
                     <p>13. I exported the file (cut only) as a .dxf. </p>
-                </p>
-
-                <br>
-                <p>
-                Big thanks to our TA Junchao for his patience and support during Office Hours.
-                Shout out to Akshay, Noelle, Sara, and the peeps on Discord for peer support and guidance. 
                 </p>
 
                 <p>
@@ -93,9 +87,48 @@
                     <p>The following documentation is a summary of the steps that are captured in much more detail in Junchao and Danli's <a href="https://docs.google.com/presentation/d/1VhQHSFEldy33ZE8axusFD3CcNbtmtntYTNC6amZCCS4/edit#slide=id.g16fb5769d1f_0_56">"Fabrication prep for Bantam tool" guidelines.</a></p>
                     <img src="assignment-4/a4-kicad-01.jpg" width=1000>
                     <p>
-                    1. I launched <b>Kicad</b> and imported my .dxf file. 
+                    1. I launched <b>Kicad</b> and imported my .dxf file and made sure the design matched the design in Rhino.
                     </p>
+                    <p>2. I plotted my design as a gerber file, plotting only "Edge.Cuts" and exported my design as a .gbr file.</p>
                 </p>
+
+                <p>
+                    <p><h2>Set up</h2></p>
+                    <p>The following documentation is a summary of the steps that are captured in much more detail in Junchao and Danli's <a href="https://docs.google.com/presentation/d/1VhQHSFEldy33ZE8axusFD3CcNbtmtntYTNC6amZCCS4/edit#slide=id.g16fb5769d1f_0_56">"Fabrication prep for Bantam tool" guidelines.</a></p>
+                    <img src="assignment-4/a4-kicad-01.jpg" width=1000>
+                    <p>
+                    1. I launched <b>Kicad</b> and imported my .dxf file and made sure the design matched the design in Rhino.
+                    </p>
+                    <p>2. I plotted my design as a gerber file, plotting only "Edge.Cuts" and exported my design as a .gbr file.</p>
+                </p>
+
+
+                <p>
+                    <p><h2>Mill</h2></p>
+                    <p>The following documentation is a summary of the steps that are captured in much more detail in Junchao and Danli's <a href="https://docs.google.com/presentation/d/1VhQHSFEldy33ZE8axusFD3CcNbtmtntYTNC6amZCCS4/edit#slide=id.g16fb5769d1f_0_56">"Fabrication prep for Bantam tool" guidelines.</a></p>
+                    <img src="assignment-4/a4-bantam-01.jpg" width=1000>
+                    <p>1. I plugged in the CNC mill and launched the Bantam tool app</p>
+                    <p>2. I double-side taped my material to another FR1 board (sacrificial layer) and taped that the the bed of the mill.</p>
+                    <p>3. I added the end mill and started the process by calibrating the z-axis of the milling bed – using the spindle control to make the adjustments.</p>
+                    <img src="assignment-4/a4-bantam-02.jpg" width=1000>
+                    <p>4. I imported my .dxf file and configured my settings, making sure to toggle off "Traces" and "Holes" in the Toolpaths section since my design was cut only. My first run was a <a href="assignment-4/a4-bantam-03failure.jpg"><u>failure</u> because I hadn't done this. </p>
+                    <p>5. I finalized the rest of my settings. I measured and inputted my material dimensions and z-offset value and pressed print.</p>
+                    <video width="1000" height="562.5" controls>
+                        <source src="assignment-3/a3-assembly-03.mp4" type="video/mp4">
+                    </video>
+                    <p>It took me two tries to nail the optimal measurement of my slats. The slats in the first design wasn't short enough to fit into the slots. I adjusted the percentage of the heights of the slats in Rhino from 95% to 93% of the height of the slots. Went through the workflow again and pressed print in the Bantam tool. And when I did that... </p>
+                    <img src="assignment-4/a4-bantam-02.jpg" width=1000>
+                    <p>The parts fit!</p>
+
+                </p>
+
+                <br>
+                <p>
+                Big thanks to our TA Junchao for his patience and support during Office Hours.
+                Shout out to Akshay, Noelle, and the peeps on Discord for peer support and guidance.
+                Much love to Sara Cagle for being my on call emotional and tech support.  
+                </p>
+
             </div>  
 
             <div class="footer">
