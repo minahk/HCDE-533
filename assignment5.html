@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Getting Meshy. And Lamps!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+        <div class="flex-wrapper">
+
+            <div class="navigation">
+                <a href="index.html"><h4>Go back to home</h4></a>
+            </div>
+
+            <div class="header">
+                <h1>Subtractive Manufacturing</h1>
+            </div>
+
+            <div class="content">
+                <p>
+                    <p><h2>Part 1: Modifying meshes</h2></p>
+                    <img src="assignment-4/a4-tools-01.jpg" width=1000>
+                    <p>
+                    Before you start, plug in your machine and download all the software.
+                    </p>
+                </p>
+                <br>
+                <p>
+                    <h2>Step 1: Design</h2>
+                    <p>Tools or software required: Rhino</p>
+                </p>
+                <br>
+                <p>1. I measured and wrote down the dimension of your material (height, width, and thickness). The dimensions of my material was 101.92mm x 70.95mm x 1.4mm.</p>
+                
+                <p>
+                    <img src="assignment-4/a4-design-01.jpg" width=1000>
+                    <p>2. I opened <b>Rhino</b> and created a bounding box that matched the height and depth of my material. I titled that layer “Material” and lock it once you are done.</p>                
+                </p>
+
+                <p>
+                    <p>3. In a separate layer titled “Cutting,” I used the "Rectangle" command to create the first panel. I created a 20mm square.</p>
+                    <p>4. I used the "Rectangle" command again to create the “slots” in your box. I used the thickness of my copper material as the width of these slots so that the sides of my box fit together evenly without anything sticking out.</p>
+                </p>
+                
+
+                <p>
+                    <p><h2>Step 2: Set up</h2></p>
+                    <p>The following documentation is a summary of the steps that are captured in much more detail in Junchao and Danli's <a href="https://docs.google.com/presentation/d/1VhQHSFEldy33ZE8axusFD3CcNbtmtntYTNC6amZCCS4/edit#slide=id.g16fb5769d1f_0_56">"Fabrication prep for Bantam tool" guidelines.</a></p>
+                    <img src="assignment-4/a4-kicad-01.jpg" width=1000>
+                    <p>
+                    1. I launched <b>Kicad</b> and imported my .dxf file and made sure the design matched the design in Rhino.
+                    </p>
+                    <p>2. I plotted my design as a gerber file, plotting only "Edge.Cuts" and exported my design as a .gbr file.</p>
+                </p>
+
+                <br>
+                <h3>Source files:</h3>
+            <p>
+            <a href="assignment-4/A4-box.dxf">Download my Rhino file</a>
+            </p>
+            <p>
+            <a href="assignment-4/A4-box-Edge_Cuts.gbr">Download my gerber file</a>
+            </p>
+            <br>
+
+                <p>Big thanks to our TA <b>Junchao</b> for his patience and support during Office Hours.</p>
+                <p>Shout out to <b>Akshay, Noelle, and the peeps on Discord</b> for peer support and guidance.</p>
+                <p>Much love to <b>Sara Cagle</b> for being my on call emotional and tech support.</p>
+
+            </div>  
+
+            <div class="footer">
+                <a href="index.html"><h4>Go back to home</h4></a>
+            </div>
+        
+        </div>
+
+       
+        
+    </body>
+</html>
