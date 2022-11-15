@@ -22,28 +22,30 @@
 
             <div class="content">
                 <p>
-                    <img src="assignment-5/a5-mesh-01.jpg" width=1000>
-                    <h2>Idea</h2>
-                    <h3>Gantry designs </h3>
-                    <p>I discovered Gantri, a lighting company based in San Francisco, that uses 3d printing exclusively to manutfacture their lamps.</p>    
-                    <p>They partner with independent product designers and studioes to create minimalist Scandinavian-inspired designs.</p>    
-                    <p>With this assignment, I was most excited about the idea of designing and making things that I would have otherwise bought from somewhere else – objects that were both functional and beautiful.</p>   
-                    <img src="assignment-5/a5-mesh-01.jpg" width=1000>
+                    <h2>Process</h2>
+                    <p>I found a cute <a href="https://www.thingiverse.com/thing:4759904">ice cream file</a> on Thingiverse that I decided to use as my object to cast for this assignment. I liked the idea of handing out mini ice cream cones to people during winter.</p>    
+
+                    <img src="assignment-6/thingiverse.jpg" width=1000>
+                    <p>The mesh for the cone needed some work, so I repaired it using "ReduceMesh" and "MeshRepair." </p>
+                    <p>I combined them together using "MeshBooleanUnion" and then sliced it in half using "MeshBooleanSplit". I turned the object into a polysurface using "MeshtoNub" so it's easier to handle.</p>
             
                     <br>
+                
+                
             
-                    <h2>Process</h2>
-                    <img src="assignment-5/a5-mesh-01.jpg" width=1000>
-                    <p>I found this great ice cream print on Thingiverse and decided to recreate this as a mold.</p>
-                    <p>I brought the ice cream STL into Rhino and sliced it in half using "BooleanMeshSplit".
+                    <img src="assignment-5/mold-rendering.jpg" width=1000>
+               
                     <p>Then I used a bunch of Boolean commands to combine and subtract surfaces to create the mold for molds.</p>
                     <p>To make it easier for me to remove the silicone once it is set in my mold, I decided to separate the box structure of the mold into two parts: 1. The flat surface with the shape I want to cast 2. The container that the flat surface will sit in. It has a hole in the back for me to press into to take out my mold.
                     <p>The ice cream mesh that I had downloaded from Thingiverse had some issues with non-manifold edges. For that reason, when I converted it into a polysurface using the "MeshtoNurb" command, I wasn't able to BooleanUnion one half of the ice cream object to its base container.</p>
                     <p>However, I wondered if Cura wouldn't see that as an error to print since it was still a closed polysurface. I decided to scale down my model by 50% to do a quick test print.</p>
-                    <p>It took about an hour to print the model. The one half of the mold without the non-manifold edge issue printed well. And luckily it fit nicely into the mold container.<p>
-                    <p>Not surprisingly, the one half of the ice cream that did have the non-manifold edge issue did not print as well.</p>
-                    <p>My plan is to recreate the cone shape in Rhino (the ice cream part of the shape didn't have any issues) instead of going through the tedious process of trying to repair the original mesh</p>
-                 
+                    
+                    <img src="assignment-5/mold-tiny-1.jpg" width=1000>
+                    <p>It took about an hour to print the model. They both printed well! And luckily they fit nicely into the mold container.<p>
+                    <p>I am in the process of printing them at actual size.</p>
+                    <img src="assignment-5/mold-tiny-2.jpg" width=1000>
+                    <img src="assignment-5/mold-tiny-3.jpg" width=1000>
+                    <img src="assignment-5/mold-tiny-4.jpg" width=1000>
             
                     <br>
         
@@ -54,7 +56,7 @@
                 <br>
         
                 <h3>Source Files</h3>
-                <a href="assignment-5/minah-lamp-files.zip">Final lamp files</a>
+                <a href="assignment-6/final-mold.3dm.zip">Final mold file</a>
       
 
             </div>  
