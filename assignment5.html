@@ -17,56 +17,69 @@
             </div>
 
             <div class="header">
-                <h1>Subtractive Manufacturing</h1>
+                <h1>3D Printed Lamp</h1>
             </div>
 
             <div class="content">
                 <p>
-                    <p><h2>Part 1: Modifying meshes</h2></p>
                     <img src="assignment-5/a5-mesh-01.jpg" width=1000>
-                    <h3>Steps:</h3>
-                    <p>1. Imported two STL files from Thingverse, the bowl was a closed polysurface and the cup was an open polysurface.</p>
-                    <p>2. I used the "ReduceMesh" command to reduce the size of the mesh of the cup by 85%. This turned the cup into a closed polysurface.</p>
-                    <p>3. I placed the cup on top of the bowl and used "MeshBooleanUnion" to join them together as one object.</p>
+                <p><h2>Inspiration</h2></p>
+                    <h3>Gantry designs </h3>
+                    <p>I discovered Gantri, a lighting company based in San Francisco, that uses 3d printing exclusively to manutfacture their lamps.</p>    
+                    <p>They partner with independent product designers and studioes to create minimalist Scandinavian-inspired designs.</p>    
+                    <p>With this assignment, I was most excited about the idea of designing and making things that I would have otherwise bought from somewhere else – objects that were both functional and beautiful.</p>   
+                    <img src="assignment-5/a5-mesh-01.jpg" width=1000>
+            
                     <br>
-                    <h3>Source files:</h3>
-                    <p>
-                        <b>Thingiverse STLs:</b>
-                        <p>
-                        <a href="assignment-5/2230232_Faceted_Bowl_and_Vase.zip">Faceted Bowl</a>
-                        </p>
-                        <p>
-                        <a href="assignment-5/238191_101_Use_Fish_Cup_.zip">Fish Cup</a>
-                        </p>
-                    </p>
-                    <p>
-                        <b>My Joined Mesh:</b>
-                        <p>
-                            <a href="assignment-5/A5-joinedmesh-minah.zip">My Mesh files (DXF & STL)</a>
-                        </p>
-                    </p>
+            
+                    <h3>Creating a kit of parts</h3>
+                    <p>I also referenced this lamp file that I found on Thingiverse. Although the form is fairly simple, I knew that the process of constructing a kit of parts that all fit and held together would be a challenge.</p>
+                    <img src="assignment-5/a5-mesh-01.jpg" width=1000>
+            
+                    <br>
+            
+             <p><h2>Processn</h2></p>
+                    <h3>Initial idea</h3>
+                    <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                    <p>This was the sketch of my initial idea: The base of the lamp is collapsing under the weight of the bulb (There’s a metaphor in there somewhere).</p>
+                    <p>I was out of town the first week of the lamp assignment so I had to cram all the steps, from CAD design to printing this past week. When I started to construct this deceptively simple shape.</p>
+                    <p>When I began by measuring my lamp innards and figuring out the dimensions and doing all the math to conceptualize the kit of parts, I decided to reduce the complexity of my project. Creating the parts that snap and hold together would be challenging enough for me, I didn’t want to take on the additional challenge of figuring out how to create and target the wrinkles on the base of the lamp – especially since I didn’t feel comfortable enough with the 3d printing technique. Based on my experience with previous assignments and given my basic understanding of Rhino, I knew that it was wiser to double the time estimate for completing this assignment to account for printing time, errors, and other unanticipated issues.</p>
+                
                 <br>
-                <p>
-                    <h2>Part 2: Designing a Lamp</h2>
-                </p>
+                
+                <h3>Simplifying my design</h3>
+                <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                <p>I measured the lamp innards with lightbulb with calipers and documented the measurements. I also used the calipers around its form to envision reasonable dimensions for the base of my lamp and its covering.</p>
+                <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                <p>In Rhino, I used a intricate concoction of surface, boolean, and transform commands to create the lamp holder, the base of the lamp, the base bottom, the base top, the top base, and the top cover of the lamp.</p>
+                <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                <p>Nervous about the time cost and the unpredictability of the design to print translation, I made a few designstest prints of the smaller pieces to start. </p>
+                <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                <p>Lots of trial and error to get the measurements right and ensure that the entire lamp could be taken apart and put back together easily. Details like the lamp cord influenced the height and thickness of the lamp base main and bottom.</p>
+                <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                <img src="assignment-5/a6-concept-1.jpg" width=1000>
+                <p>I learned that I needed to make the gaps in the main base 1.2 times bigger than the dimensions of the bottom protrusions in order for the actual prints to snap together perfectly.</p>
+                
+                <br>
+                
+                <h2>Final Lamp</h2>
                 <img src="assignment-5/a6-concept-1.jpg" width=1000>
                 <img src="assignment-5/a6-concept-2.jpg" width=1000>
                 
-                <h3>Rough Plan:</h3>    
-                    <p>*Note*: I was out of town from Friday to Monday, so I wasn't able to make as much progress as I wanted to this week!</p?
-                    <p> 1. Design the lamp holder model in Rhino and make some test prints on the 3d printer until I'm happy with the prototype.</p>
-                    <p> 2. Design the base of the lamp in Rhino, starting with a basic cylinder shape. Try different methods to create wrinkles around the surface.
-                    <p> 3. Create the globe top using the polyline tool and the revolve command.
-                    <p> 4. Punch a hole in the cylinder from top to bottom, sized the same as the base of the globe top. Punch a smaller hole at the bottom of the base for the light cord.
-                    <p> 4. Create the base bottom.
                 <br>
-
-                <p>
-                <h3>Special thanks:</h3>
-                    <p>As always, huge thanks to Junchao for his responsiveness and incredibly helpful tutorials.</p>
-                </p>
-
+        
+                <h3>Special Thanks</h3>
+                <p>As always, Junchao!! For teaching me about cantilevers and telling me how to fix my rhino model so cura doesn’t get confused.</p>
+                <p>Thanks to Noelle for shaving what felt like years of my life by sharing “fast but still good” cura custom settings. I almost weeped when that reduced my print from 12 hours to 6.</p>
+                <p>Thanks to Sara Cagle for helping me with tips and troubleshooting throughout my project. And for always being there to provide emotional support.</p>
+                <p>Thanks to everyone who jumps in and asks questions and provides answers in the discord channel! Even just learning about other peoples issues and how they’ve resolved them helps me improve my skills and confidence.</p>
+             
                 <br>
+        
+                <h3>Source Files</h3>
+                <a href="assignment-1/assignment1.dxf">Final lamp files</a>
       
 
             </div>  
