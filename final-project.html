@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Molding and Casting</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+        <div class="flex-wrapper">
+
+            <div class="navigation">
+                <a href="index.html"><h4>Go back to home</h4></a>
+            </div>
+
+            <div class="header">
+                <h1>Molding and Casting</h1>
+            </div>
+
+            <div class="content">
+                <p>
+                    <h2>Process</h2>
+                    <p>I found a cute <a href="https://www.thingiverse.com/thing:4759904">ice cream file</a> on Thingiverse that I decided to use as my object to cast for this assignment. I liked the idea of handing out mini ice cream cones to people during winter.</p>    
+
+                    <img src="assignment-6/thingiverse.jpg" width=1000>
+                    <p>The mesh for the cone needed some work, so I repaired it using "ReduceMesh" and "MeshRepair." </p>
+                    <p>I combined them together using "MeshBooleanUnion" and then sliced it in half using "MeshBooleanSplit". I turned the object into a polysurface using "MeshtoNub" so it's easier to handle.</p>
+            
+                    <br>
+                
+                
+            
+                    <img src="assignment-6/mold-rendering.jpg" width=1000>
+               
+                    <p>Then I used a bunch of Boolean commands to combine and subtract surfaces to create the mold for molds.</p>
+                    <p>To make it easier for me to remove the silicone once it is set in my mold, I decided to separate the box structure of the mold into two parts: 1. The flat surface with the shape I want to cast 2. The container that the flat surface will sit in. It has a hole in the back for me to press into to take out my mold.
+                    <p>The ice cream mesh that I had downloaded from Thingiverse had some issues with non-manifold edges. For that reason, when I converted it into a polysurface using the "MeshtoNurb" command, I wasn't able to BooleanUnion one half of the ice cream object to its base container.</p>
+                    <p>However, I wondered if Cura wouldn't see that as an error to print since it was still a closed polysurface. I decided to scale down my model by 50% to do a quick test print.</p>
+                    
+                    <img src="assignment-6/mold-tiny-1.jpg" width=1000>
+                    <p>It took about an hour to print the model. They both printed well! And luckily they fit nicely into the mold container. I learned through the print that the ice cream cone on one side of the mold wasn't at the same z-axis point as the other side. I corrected it in Rhino.<p>
+                    <img src="assignment-6/mold-tiny-2.jpg" width=1000>
+                    <img src="assignment-6/mold-tiny-3.jpg" width=1000>
+                    <img src="assignment-6/mold-tiny-4.jpg" width=1000>
+            
+                    <br>
+
+                    <p>I printed the mold of molds at actual size. To save myself the hours of print time and headache, I printed just one container to be used for both sides.</p>
+                    <img src="assignment-6/mold-big-2.jpg" width=1000>
+                    <img src="assignment-6/mold-big-1.jpg" width="1000">
+
+                    <p>Once I had my 3d-printed mold of molds, I started the process of casting the silicone mold. Following the recommended safety instructions, I wore safety goggles, a mask protecting my nose and mouth, and vinyl gloves. Besides the Ooomoo liquids, other materials I used, included 4 plastic cups, popsicle sticks (for stirring the mixture), a garbage bag to lay beneath the materials, and paper towels.</p>
+                    <p>I poured the blue and pink liquids into separate cups at equal measure. I then poured them both into a third cup, being careful to also scrape out the same amount of liquids from each cup. I eyeballed this.</p>
+                    <p>I stirred the combined mixture for about 3 minutes until I could no longer see the individual blue and pink colors.</p>
+                    <p>I actually poured that mixture into a fourth cup since no amount of diligent scraping and stirring would mix in the isolated color at the bottom of the cup.</p>
+                    <p>I then poured that mixture slowly into one corner of my 3d-printed mold until the mixture filled the container to its brim</p>
+                    <img src="assignment-6/mold-oomoo.jpg" width="1000">
+
+                    <p>Since I printed only one container, I cast the silicone one side at a time. I did this in the evening before bed to give the material sufficient time to cure overnight.</p>
+                    <p>Once the silicone had cured, firm to the touch, I popped the mold out by pressing firmly into the bottom of the container, which was the back plate of one side of the mold.</p>
+                    <p>With minimal force, the silicone mold popped out easily.</p>
+                    <p>After doing this to the other side, I trimmed the edges of my silicone mold and bound them together using rubber bands.</p>
+                    <img src="assignment-6/mold-casting-1.jpg" width="1000">
+
+                    <p>I divided the plaster powder equally into four compostable sandwich bags. I poured about 1/8th cup of water into the bag, zipped it up, and mushed the mixture from outside the bag with my hands until it was thoroughly integrated. It was easier to pour into the pouring vent when the mixture had the thickness of pancake batter.</p>
+                    <img src="assignment-6/mold-casting-2.jpg" width="1000">
+
+                    <p>Using scissors, I snipped a tiny piece of the corner of the bag to transform it into a kind of pastry bag. I squeezed out the mixture from that hole into the pour hole.</p>
+                    <img src="assignment-6/mold-casting-3.jpg" width="1000">
+
+                    <p>I don't know if this did anything, but I also used one wooden chopstick to occasionally poke into the pouring hole in an effort to ensure every corner of the cavity was filled with the plaster.</p>
+                    <p>It took about half an hour to 40 minutes for the plaster to harden.</p>
+                    <img src="assignment-6/mold-casting-4.jpg" width="1000">
+
+                    <p>After I removed the plaster object from the mold, I broke off the cast pouring vent at the bottom.</p>
+                    <img src="assignment-6/mold-casting-5.jpg" width="1000">
+                    <img src="assignment-6/mold-casting-6.jpg" width="1000">
+                    <img src="assignment-6/mold-casting-all.jpg" width="1000">
+
+        
+                <h3>Special Thanks</h3>
+                <p>As always, a HUGE thank you to Junchao! For your availability and responsiveness and for teaching me about the "Contour" command in Rhino. I always learn something new everytime I talk to you.</p>
+                <p>Thanks to Sara Cagle for her friendship and support throughout the week and for sharing amazing learning resources.</p>
+             
+                <br>
+        
+                <h3>Source Files</h3>
+                <a href="assignment-6/final-mold.3dm.zip">Final mold file</a>
+      
+
+            </div>  
+
+            <div class="footer">
+                <a href="index.html"><h4>Go back to home</h4></a>
+            </div>
+        
+        </div>
+
+       
+        
+    </body>
+</html>
