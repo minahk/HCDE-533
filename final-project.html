@@ -91,42 +91,47 @@
                 </p>
 
                 <p>My original plan was to parametrically design the box, but after sharing my proposal with Junchao during office hours, he advised me that Grasshopper might be overkill for the simplicity of my geometry. He suggested that it might be easier to construct the shapes in Rhino. So I decided to do just that.</p>
-                <img src="final-project/Box-1.jpg" width=980>
                 <p>Other than referencing the size dimensions and number of box joints of the <a href="https://www.etsy.com/listing/1276860753/personalized-recipe-box-with-wooden?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_us_-home_and_living&utm_custom1=_k_Cj0KCQiA37KbBhDgARIsAIzce15F8ERZSQdePGMLEGHnBSYURIspVZsqzKMXGU2ewowDy9NEF6xsSd4aAlHHEALw_wcB_k_&utm_content=go_17434234701_144283651144_602523314340_pla-303628061699_c__1276860753_189534521&utm_custom2=17434234701&gclid=Cj0KCQiA37KbBhDgARIsAIzce15F8ERZSQdePGMLEGHnBSYURIspVZsqzKMXGU2ewowDy9NEF6xsSd4aAlHHEALw_wcB">Etsy box</a>that had initially inspired my project, I designed the pieces in Rhino from scratch. </p>
                 <p>The design process was fairly simple and straightforward.</p>
+
+                <img src="final-project/recipe-sketches.png" width=960>
                     
                 <p>1. I started a new Rhino file and, for the sake of simplicity, I set the unit to inches to match the unit settings of the laser cutter.</p>
                 <p>2. I then measured the thickness of the quarter inch plywood that I bought from the Mill. I'm glad I did this because the thickness was actually <b>.2 inches</b> instead of .25.</p>
                 <p>3. I used that measurement to size the box joints (length and width of fingers and gaps) in my construction pieces.</p>
-                <img src="final-project/Box-1.jpg" width=980>
-                <p>4. The box pieces were designed using basic Rhino commands: A combination of the rectangle tool, trim, and join commands.</p>
+                <img src="final-project/recipe-measurements.png" width=960>
+                <p>4. The box pieces were designed using basic Rhino commands: A combination of the rectangle tool, trim, join, copy, distance, and mirror commands.</p>
                 <p>5. I laid out all the pieces that I would need and organized them, including all the measurements, using layers and labels.</p>
-                <img src="final-project/Box-1.jpg" width=980>
+                <img src="final-project/recipe-layout.png" width=960>
 
                 <h3>Testing fit</h3>
                 <p>Since the crux of my project was a completed box, the most important step to get right was the fit of the box joints, so that's what I focused on first. I expected to take several tries before I landed on the perfect fit between all the pieces (not too tight and not too loose).</p>
                 <p>I define "Perfect fit" as pieces that interlock and don't fall apart with a light shaking.</p>
                 <p>I ran a series of tests to figure out the width of the kerf (the amount of material removed by the laser in a cut) and subsquently the measurement of the cut lines for the box joints.</p>
-                <img src="final-project/Box-1.jpg" width=980>
+                <img src="final-project/recipe-testing.png" width=960>
                 <p>The only variable I adjusted in this test was the width of the box joint fingers. I left the width of the gaps the same throughout the experiment at .5 inches, which was the thickness of my plywood material.</p>
                 <p>To conserve as much material as possible, I trimmed a tiny section of the box and duplicated those pieces to quickly make my test cuts at various widths.</p>
-                <p>The perfect fit turned out to be somewhere in between .51 and .52 inches for the width of the fingers. This meant that the kerf was around 0.014-0.015 mm.</p>             
+                <p>The perfect fit turned out to be somewhere in between .51 and .52 inches for the width of the fingers. This meant that the kerf was around 0.014-0.015 mm.</p> 
+                <img src="final-project/recipe-test-cuts.jpg" width=960>            
                 <p>So I offset the cut lines by the with of the kerf (0.014"), which set the width of all the fingers at .514". I made that update to all the fingers of my pieces.</p>
 
                 <br>
                 <p><b>But wait, there's more!</b></p>
                 <p>I also extended the length of the fingers by .010" beyond the thickness of the material, which was 0.2"? Why? Because I didn't like the aesthetic of the burnt edges in the final joints.</p>
+                <img src="final-project/recipe-extension.png" width=960>    
                 <p>By making the fingers just a bit longer, I knew that I could sand down the burnt edges flush so that the color of the wood stays relatively uniform in the final box.</p>
 
                 <br>
 
                 <h3>Visualizing fit</h3>
                 <p>I created a 3d model of the box fit together using the 2d pieces that I had measured and designed as another layer of testing to ensure my pieces actually fit together the way I wanted them to.</p>
+                <img src="final-project/recipe-3d-model.png" width="960">
                 <p>I'm glad that I didn't skip this step and go straight to cutting. Constructing the 3d model of the box in Rhino highlighted additional misalignment and sizing issues with my original measurements, which I then corrected in my 2d geometries.</p>
                 <p>The 3d model also helped me visualize the final product and helped me decide the placement of various elements, including the recipe ledge on the cover and the location of the seasonal icon.</p>
                 <p>It was also much easier for me to design the measurements of the support bar using the 3d model. I did this by opening the lid of the model at roughly the angle that would make for comfortable recipe reading.</p>
                 <p>I then used the arc tool (start, end, point on arc) to create the outside arc that intersected a quarter of an inch into the front panel of the bottom box and the front panel of the top lid.</p>
                 <p>I used the arc tool to create the inside arc of the support bar and then joined the pieces together using the line tool. I then extruded the shape and used boolean difference to cut out the areas that overlapped with the box.</p>
+                <img src="final-project/recipe-support-bar.png" width="960">
                 
                 <br>
                 <hr class="solid">
@@ -137,7 +142,7 @@
                 <p><b>Tools:</b>
                     <ol>
                         <li>Laser-cutter</li>
-                        <li>Quarter-inch plywood (30x20 or the largest size that fits the laser-cutter)</li>
+                        <li>Quarter-inch plywood (30x18)</li>
                     </ol>
                    </p>
 
@@ -145,10 +150,13 @@
 
                 <h3>Adding the engraved elements to my design</h3>
                 <p>I exported my design from Rhino as a .dxf file and imported it into Illustrator, making sure that the scale in the import dialog was set to 1:1 ratio. I sized my Illustrator artboard to the size of my plywood material.</p>
+                <img src="final-project/recipe-ai-dialog.png" width="960">
                 <p>After the pieces were laid out on the artboard, minimizing the space in between the pieces to conserve as much material, I started to think about the design of the seasonal icon and illustration.</p>
                 <p>I found the jpg of the illustration online, copied and pasted it into Illustrator, and sized it to the dimension of the back panel of the box. The illustration was overlaid on top of the outline of the piece, which was set to 0.001pt stroke to signal cutting and not engraving.</p>
                 <p>I traced an icon of a snowflake that I had found online in Figma (since it is ironically much more intuitive to draw vector illustrations in Figma than in Adobe illustrator is), exported it as an svg file and then imported it into the file with my soon-to-be-laser-cut pieces in Illustrator.</p>
+                <img src="final-project/recipe-snowflake.png" width="960">
                 <p>I positioned the icon in the center of the top surface of the lid on a separate layer titled "Engraving".</p>
+                <img src="final-project/recipe-ai-layout.png" width="960">
 
                 <br>
 
@@ -166,6 +174,7 @@
 
                 <img src="final-project/Box-1.jpg" width="980">
                 <p>The parts fit!</p>
+                <img src="final-project/recipe-laser-cut-final.jpg" width="960">
 
                 <br>
                 <hr class="solid">
